@@ -1,97 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Sarabun:wght@300;400;500;700&display=swap');
+
 :root {
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
-  line-height: 1.5;
-  font-weight: 400;
+  /* COLOR PALETTE */
+  --rc--color-p: #f5f5f5;
+  --rc--color--hover: #00e1ff;
+  --re--color-button: #0099ff;
+  --rc--color-light: #0b0a1f;
+  --rc--color--highlight: #6cace4;
+  --rc--color--divider: rgb(164, 164, 164);
 
-  color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
+  /* BACKGROUND COLOR */
+  --rc--bg-dark: #0b0a1f;
+  --rc--bg-light: #f9f9f9;
 
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  -webkit-text-size-adjust: 100%;
+  /* TYPOGRAPHY COLOR */
+  --rc-color-typography-heading: var(--rc-color-n-500);
+  --rc-color-typography-body: var(--rc-color-n-500);
+  --rc-color-typography-price: var(--rc-color-n-300);
+
+  /* TYPOGRAPHY */
+  --rc-typography-typeface: 'Sarabun', sans-serif;
+
+  /* FONT SIZE */
+  --rc-typography-h1: 1.9rem;
+  --rc-typography-h2: 1.5rem;
+  --rc-typography-h3: 1.2rem;
+  --rc-typography-p: 0.8rem;
+
+  /* LETTER SPACING */
+  --rc-typography-heading-spacing: 0.5rem;
+  --rc-typography-content-spacing: 0.1rem;
+
+  /* GAP */
+  --rc-gap: 1.5rem;
+
+  /* PADDING */
+  --rc-section-padding: 1.5rem 0;
+  --rc-btn-padding: 0.5rem 2rem;
+
+  /* BORDER */
+  --rc-border: 0.12rem solid var(--rc-color-n-050);
+
+  /* SIZING */
+  --rc-image-height: 18rem;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Sarabun', sans-serif;
+}
+
+li {
+  list-style-type: none;
 }
 
 a {
-  font-weight: 500;
-  color: #646cff;
-  text-decoration: inherit;
+  text-decoration: none;
+  color: inherit;
 }
-a:hover {
-  color: #535bf2;
+
+html {
+  scroll-behavior: smooth;
 }
 
 body {
-  margin: 0;
-  display: flex;
-  place-items: center;
-  min-width: 320px;
-  min-height: 100vh;
+  background-color: var(--rc--bg-dark);
+  color: var(--rc--bg-dark);
+  transition: all 0.5s ease-in-out;
 }
 
-h1 {
-  font-size: 3.2em;
-  line-height: 1.1;
+.light {
+  background-color: var(--bg-light);
+  color: var(--primary-light);
 }
 
-#app {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+main {
+  min-height: 80vh;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.vanilla:hover {
-  filter: drop-shadow(0 0 2em #f7df1eaa);
-}
-
-.card {
-  padding: 2em;
-}
-
-.read-the-docs {
-  color: #888;
-}
-
-button {
-  border-radius: 8px;
-  border: 1px solid transparent;
-  padding: 0.6em 1.2em;
-  font-size: 1em;
-  font-weight: 500;
-  font-family: inherit;
-  background-color: #1a1a1a;
-  cursor: pointer;
-  transition: border-color 0.25s;
-}
-button:hover {
-  border-color: #646cff;
-}
-button:focus,
-button:focus-visible {
-  outline: 4px auto -webkit-focus-ring-color;
-}
-
-@media (prefers-color-scheme: light) {
-  :root {
-    color: #213547;
-    background-color: #ffffff;
-  }
-  a:hover {
-    color: #747bff;
-  }
-  button {
-    background-color: #f9f9f9;
-  }
+a, p {
+  font-size: 1.1rem;
 }
