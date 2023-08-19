@@ -1,0 +1,27 @@
+.home {
+  padding: 0 8rem;
+  height: 80vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+@media (max-width: 700px) {
+  .home {
+    padding: 0 2rem;
+  }
+}
+
+.cr-span {
+  color: var(--rc--color-button);
+}
+
+.home > h1 {
+  font-size: 5.5rem;
+  color: var(--rc--bg-light);
+}
+
+.home > a {
+  font-size: 1.5rem;
+}

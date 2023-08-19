@@ -4,14 +4,14 @@
   /* COLOR PALETTE */
   --rc--color-p: #f5f5f5;
   --rc--color--hover: #00e1ff;
-  --re--color-button: #0099ff;
+  --rc--color-button: #008ce9;
   --rc--color-light: #0b0a1f;
   --rc--color--highlight: #6cace4;
   --rc--color--divider: rgb(164, 164, 164);
 
   /* BACKGROUND COLOR */
   --rc--bg-dark: #0b0a1f;
-  --rc--bg-light: #f9f9f9;
+  --rc--bg-light: #f8f9fa;
 
   /* TYPOGRAPHY COLOR */
   --rc-color-typography-heading: var(--rc-color-n-500);
@@ -67,7 +67,7 @@ html {
 
 body {
   background-color: var(--rc--bg-dark);
-  color: var(--rc--bg-dark);
+  color: var(--rc--bg-light);
   transition: all 0.5s ease-in-out;
 }
 
